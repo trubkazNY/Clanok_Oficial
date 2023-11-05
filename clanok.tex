@@ -11,6 +11,7 @@
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
 
 \usepackage{cite}
+\usepackage{float}
 %\usepackage{times}
 
 \pagestyle{headings}
@@ -103,6 +104,38 @@ V databázach, ktoré používajú in-memory processing sa veľké množstvo dá
 Jedná sa o klúčové nastroje v prípade ak nám priebežne prúdi veľké množstvo dát. Dokážu ich rýchlo a efektívne spracovať. Takéto dáta môžu byť napríklad dáta zo senzorov alebo zo sociálnych medií.
 
 Momentálne najpoužívanejší sytém je Apache Kafka. Výhody Apache Kafka sú, že je škálovatelná a spoľahlivá. ~\cite{ApacheKafka}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{ApacheKafka.jpg}
+  \caption{Architektura Apache Kafka, zdroj \cite{ApacheKafka}}
+  \label{ApacheKafkaObrazok}
+\end{figure}
+
+
+
+\section {Aplikácie v rôznych odvetviach} \label {Aplikacie}
+
+V praxi sa využíva hlavne framework Apache Spark v rôznych odvetviach ako napríklad:
+\begin{itemize}
+\item Zdravotníctvo
+\item Financie
+\item Zábavný priemysel
+\end{itemize}
+
+\subsection {Zdravotníctvo}
+
+Využíva sa na analýzu zdravotných záznamov pacienta. Pomáha identifikovať či je pacient náchylný ku zdravotným komplikácia v budúcnosti. Taktiež spracováva dáta z genómového sekvenovania (genomic sequencing).
+
+\subsection {Financie}
+
+Poskytuje aktuálny prehľad, ktorý pomáha pri robení správnych rozhodnutí. Napríklad v oblasti segmentácie zákazníkov, hodnotení úverového rizika alebo pri cielenej reklame.
+
+\subsection {Zábavný priemysel}
+
+Hlavne v oblasti videoherného priemyslu pomáha s rozpoznávaním vzorov. Neskôr využité na selektívnu reklamu alebo automatická zmena náročnosti na základe hráčskych schopností.
+
+\cite {ApacheAplication}
+
 \section{Záver} \label{zaver} % prípadne iný variant názvu
 
 
