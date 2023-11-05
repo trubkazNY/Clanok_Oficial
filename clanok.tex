@@ -39,7 +39,7 @@
 
 \section{Úvod}
 
-Pojem "veľké dáta" (Big Data) odkazuje na súbor dát, ktorých veľkosť, komplexnosť a rýchlosť rastu je rapídna. Preto sú zložité na spracovanie a analýzu.\cite{ZakladneInfo} Cieľom článku je poskytnúť prehľad o prístupoch a technikách na manipuláciu s týmito dátami. Tieto nástroje zahŕňajú distrubuované systémy na spracovanie dát~\ref{Distribuovane}, algoritmy strojového učenia~\ref{StrojUcenie} a metriky na hodnotenie kvality dát~\ref{Metriky}. Článok sa zameriava aj na rýchle spracovanie dát v reálnom čase~\ref{RychleSpracovanie}. Na záver sú uvedené aplikácie v rôznych odvetviach~\ref{Aplikacie}.
+Pojem "veľké dáta" (Big Data) odkazuje na súbor dát, ktorých veľkosť, komplexnosť a rýchlosť rastu je rapídna. Preto sú zložité na spracovanie a analýzu.\cite{ZakladneInfo} Cieľom článku je poskytnúť prehľad o prístupoch a technikách na manipuláciu s týmito dátami. Tieto nástroje zahŕňajú distrubuované systémy na spracovanie dát~\ref{Distribuovane}  a metriky na hodnotenie kvality dát~\ref{Metriky}. Článok sa zameriava aj na rýchle spracovanie dát v reálnom čase~\ref{RychleSpracovanie}. Na záver sú uvedené aplikácie v rôznych odvetviach~\ref{Aplikacie}.
 
 
 
@@ -80,7 +80,9 @@ Apache Spark je nová generácia systémov na spracovanie veľkých dát. Systé
 \item Spark core (jadro)
 \item Upper-level libraries
 \end{itemize}
-V porovnaní s Hadoop MapReduce je Apache Spark rýchlejší a všestranejší. Vďaka knižniciam sa dá použiť na strojové učenie (knižnica Spark’s MLlib), grafická analýza (knižnica GraphX), prúdové spracovanie (knižnica Spark Streaming) a aj na spracovanie štruktúrovaných dát (knižnica Spark SQL). Kombinuje jadro pre distrubuované výpočty s pokročilým programovacím modelom pre spracovanie v pamäti (in-memory processing). Zachováva rovnakú možnosť škálovania a odolnosti voči chybám ako Hadoop MapReduce, avšak poskytuje viacstupňový model programovania. Celkovo je rýchlejší a oveľa jednoduchši na používanie.
+V porovnaní s Hadoop MapReduce je Apache Spark rýchlejší a všestranejší. Vďaka knižniciam sa dá použiť na strojové učenie (knižnica Spark’s MLlib), grafická analýza (knižnica GraphX), prúdové spracovanie (knižnica Spark Streaming) a aj na spracovanie štruktúrovaných dát (knižnica Spark SQL). Kombinuje jadro pre distrubuované výpočty s pokročilým programovacím modelom pre spracovanie v pamäti (in-memory processing)~\ref{InMemory}. Zachováva rovnakú možnosť škálovania a odolnosti voči chybám ako Hadoop MapReduce, avšak poskytuje viacstupňový model programovania. Celkovo je rýchlejší a oveľa jednoduchši na používanie.
+
+
 \section{Záver} \label{zaver} % prípadne iný variant názvu
 
 
