@@ -62,7 +62,13 @@ Hadoop je programovací framework (rámec) na podporu spracovania veľkých dát
 \item HDFS
 \end{enumerate}
 
-Hlavnou výhodou frameworku Hadoop je úložný systém odolný voči chýbam s názvom Hadoop Distributed File System (HDFS). Je schopný uložiť obrovské množstvo informácií, postupne sa škálovať a to najdôležitej je, že dokáže prežiť zlyhanie významných častí infraštruktúry úložsika.
+Hlavnou výhodou frameworku Hadoop je úložný systém odolný voči chýbam s názvom Hadoop Distributed File System (HDFS). HDFS rozdeluje systém súborov do 128 MB blokov.~\cite{HDFS} Je schopný uložiť obrovské množstvo informácií, postupne sa škálovať a to najdôležitej je, že dokáže prežiť zlyhanie významných častí infraštruktúry úložsika.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Hadoop.jpg}
+  \caption{Architektura Hadoop, zdroj \cite{HadoopObrazok}}
+  \label{HadoopObrazok}
+\end{figure}
 
 Hadoop vytvára zhluky strojov a koordinuje prácu medzi nimi. Ak jeden zlyhá tak Hadoop pokračuje bez stráty. Prácu zlyhaného článku prehodí na zvyšné počítače.
 
@@ -97,7 +103,7 @@ Táto sekcia sa zameriava a kladie dôraz na rýchle a efektívne spracovanie d�
 
 Spracovanie v pamäti je základom pre Apache Spark. Umožňuje mu to ukladať prechodné dáta do pamäte, čo má za následok to, že namiesto aby všetky dáta išli na disk a neskôr sa vyberali z disku, tak sú uložené dočasne v pamäti kde čakujú na spracovanie. Toto urýchluje celý proces spracovania dát.~\cite{Apache}
 
-V databázach, ktoré používajú in-memory processing sa veľké množstvo dát generuje v reálnom čase. Je potrebné ho v reálnom čase aj spracovať. Väčšina dát prichádza priamo do pamäte na spracovanie, len málo dát ide na pevný disk na dlhodobé uloženie.  ~\cite{InMemoryArticle}
+V databázach, ktoré používajú in-memory processing sa veľké množstvo dát generuje v reálnom čase. Je potrebné ho v reálnom čase aj spracovať. Väčšina dát prichádza priamo do pamäte na spracovanie, len málo dát ide na pevný disk na dlhodobé uloženie. ~\cite{InMemoryArticle}
 
 \subsection {Systémy na spracovanie tokov}
 
