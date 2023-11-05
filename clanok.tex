@@ -53,8 +53,17 @@ Distribuované systémy na spracovanie dát predstavujú kľúčový prvok v dig
 
 \subsubsection {Hadoop: MapReduce}
 
+Hadoop je programovací framework (rámec) na podporu spracovania veľkých dátových súborov. Bol vyvinútý spoločnosťou Google MapReduce. V súčastnosti sa v praxi používa Appache Hadoop, ktorý sa rozdeľuje na rôzne časti:
 
+\begin{enumerate}
+\item Hadoop Kernel
+\item MapReduce
+\item HDFS
+\end{enumerate}
 
+Hlavnou výhodou frameworku Hadoop je úložný systém odolný voči chýbam s názvom Hadoop Distributed File System (HDFS). Je schopný uložiť obrovské množstvo informácií, postupne sa škálovať a to najdôležitej je, že dokáže prežiť zlyhanie významných častí infraštruktúry úložsika.
+
+Hadoop vytvára zhluky strojov a koordinuje prácu medzi nimi. Ak jeden zlyhá tak Hadoop pokračuje bez stráty. Prácu zlyhaného článku prehodí na zvyšné počítače.
 
 \section{Záver} \label{zaver} % prípadne iný variant názvu
 
