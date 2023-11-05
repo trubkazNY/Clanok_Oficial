@@ -80,7 +80,7 @@ Apache Spark je nová generácia systémov na spracovanie veľkých dát. Systé
 \item Spark core (jadro)
 \item Upper-level libraries
 \end{itemize}
-V porovnaní s Hadoop MapReduce je Apache Spark rýchlejší a všestranejší. Vďaka knižniciam sa dá použiť na strojové učenie (knižnica Spark’s MLlib), grafická analýza (knižnica GraphX), prúdové spracovanie (knižnica Spark Streaming) a aj na spracovanie štruktúrovaných dát (knižnica Spark SQL). Kombinuje jadro pre distrubuované výpočty s pokročilým programovacím modelom pre spracovanie v pamäti (in-memory processing)~\ref{InMemory}. Zachováva rovnakú možnosť škálovania a odolnosti voči chybám ako Hadoop MapReduce, avšak poskytuje viacstupňový model programovania. Celkovo je rýchlejší a oveľa jednoduchši na používanie. \cite{Apache}
+V porovnaní s Hadoop MapReduce je Apache Spark rýchlejší a všestranejší. Vďaka knižniciam sa dá použiť na strojové učenie (knižnica Spark’s MLlib), grafická analýza (knižnica GraphX), prúdové spracovanie (knižnica Spark Streaming) a aj na spracovanie štruktúrovaných dát (knižnica Spark SQL). Kombinuje jadro pre distrubuované výpočty s pokročilým programovacím modelom pre spracovanie v pamäti (in-memory processing)~\ref{InMemory}. Zachováva rovnakú možnosť škálovania a odolnosti voči chybám ako Hadoop MapReduce, avšak poskytuje viacstupňový model programovania. Celkovo je rýchlejší a oveľa jednoduchši na používanie.~\cite{Apache}
 
 \subsection {Metriky na hodnotenie kvality dát} \label {Metriky}
 
@@ -94,7 +94,9 @@ Táto sekcia sa zameriava a kladie dôraz na rýchle a efektívne spracovanie d�
 
 \subsection {Spracovanie v pamäti} \label{InMemory}
 
+Spracovanie v pamäti je základom pre Apache Spark. Umožňuje mu to ukladať prechodné dáta do pamäte, čo má za následok to, že namiesto aby všetky dáta išli na disk a neskôr sa vyberali z disku, tak sú uložené dočasne v pamäti kde čakujú na spracovanie. Toto urýchluje celý proces spracovania dát.~\cite{Apache}
 
+V databázach, ktoré používajú in-memory processing sa veľké množstvo dát generuje v reálnom čase. Je potrebné ho v reálnom čase aj spracovať. Väčšina dát prichádza priamo do pamäte na spracovanie, len málo dát ide na pevný disk na dlhodobé uloženie.  ~\cite{InMemoryArticle}
 \section{Záver} \label{zaver} % prípadne iný variant názvu
 
 
