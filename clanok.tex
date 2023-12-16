@@ -43,7 +43,13 @@
 Pojem "veľké dáta" (Big Data) odkazuje na súbor dát, ktorých veľkosť, komplexnosť a rýchlosť rastu je rapídna. Preto sú zložité na spracovanie a analýzu.\cite{ZakladneInfo} Cieľom článku je poskytnúť prehľad o prístupoch a technikách na manipuláciu s týmito dátami. Tieto nástroje zahŕňajú distrubuované systémy na spracovanie dát~\ref{Distribuovane}  a metriky na hodnotenie kvality dát~\ref{Metriky}. Článok sa zameriava aj na rýchle spracovanie dát v reálnom čase~\ref{RychleSpracovanie}. Na záver sú uvedené aplikácie v rôznych odvetviach~\ref{Aplikacie}.
 
 \section{Charakteristika veľkých dát}
-
+Veľké dáta nie su špecificky vyjadrené ako určité množstvo dát, zvyčajne sa jedná o dáta v rozsahu gigabajtov a vyššie, alebo ktoré nemožno jednoducho integrovať. Veľké dáta majú 4 charakteristiky označované 4V. A to sú:
+\begin{itemize}
+\item \emph {Objem/Volume} - na súčastnej úrovní sa jedná zvčajne o veľkosti PB, ale ak sú prichádzajúce udaje také veľké, že ich je ťažké spracovať, vtedy ich nazývame veľké dáta
+\item \emph {Rozmanitosť/Variety} - týka sa množstva zdrojov alebo prichádzajúcich dát databázy
+\item \emph {Rýchlosť/Velocity} - rýchlosť, ktorou prichádzajú údaje a zároveň rýchlosť akou sa údaje analyzujú a spracovávajú, analýza v reálnom čase \ref{RychleSpracovanie}
+\item \emph {Hodnota/Value} - schopnosť vyvodiť užitočné závery z množstva dát pomocou analýzy dát
+\end{itemize}
 \cite{Charakteristika}
 
 
@@ -82,8 +88,8 @@ Hadoop vytvára zhluky strojov a koordinuje prácu medzi nimi. Ak jeden zlyhá t
 Hlavnou zložkou ekosystému Hadoop je MapReducce framework. Umožňuje rozdelenie problému a dát na menšie a spustiť ich paralelne. MapReduce má dve funkcie:
 
 \begin{itemize}
-\item map - ako vstup hodnota/klúč páru a generuje intemediate set párov klúčov/hodnôt
-\item reduce - spája intermediate set hodnôt s rovnakým intermediate set klúčov
+\item \emph {map} - ako vstup hodnota/klúč páru a generuje intemediate set párov klúčov/hodnôt
+\item \emph {reduce} - spája intermediate set hodnôt s rovnakým intermediate set klúčov
 \end{itemize}
 \cite{ZakladneInfo}
 
