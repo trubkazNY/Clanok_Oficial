@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -65,7 +65,7 @@ Hadoop je programovací framework (rámec) na podporu spracovania veľkých dát
 Hlavnou výhodou frameworku Hadoop je úložný systém odolný voči chýbam s názvom Hadoop Distributed File System (HDFS). HDFS rozdeluje systém súborov do 128 MB blokov~\cite{HDFS}. Na obrázku~\ref{HadoopObrazok} je vykreslená architektúra HDFS. Je schopný uložiť obrovské množstvo informácií, postupne sa škálovať a to najdôležitej je, že dokáže prežiť zlyhanie významných častí infraštruktúry úložsika.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.73\textwidth]{HDFS_prelozene.png}
+  \includegraphics[width=1\textwidth]{HDFS_prelozene.png}
   \caption{Architektura HDFS, spracované podľa \cite{HadoopObrazok}}
   \label{HadoopObrazok}
 \end{figure}
@@ -96,31 +96,56 @@ Veľké dáta sú novým konceptom a ešte nie je zaužívaný štandart na hodn
 \item \emph {Dostupnosť}
 	\begin{itemize}
 	\item Prístupnosť
+
+	 - úroveň obtiažnosti získavania údajov používateľom, úzko spojená so stupňom otvorenosti údajov, vyšší stupeň otvorenosti znamená vyšší stupeň prístupnosti
 	\item Aktuálnosť
+
+	 - časové oneskorenie od generovania a získavania údajov po jeho využitie, pri veľkých dátach sa obsah rýchlo mení, ciže aktuálnosť je veľmi dôležitá
 	\item Autorizácia
+
+	 - či jednotlivec má právo používať údaje
 	\end{itemize}
 \item \emph {Použiteľnosť}
 	\begin{itemize}
 	\item Dôveryhodnosť
+
+	 - na vyhodnotenie nečíselnýchh údajov, tri faktory: spoľahlivosť zdrojov, normalizácia údajov a čas vytvorenia údajov
 	\item Definícia/Dokumentácia
+
+	- špecifikácia údajov zahŕňajúc názov údajov, definíciu, rozsahy platných hodnôt atď.
 	\item MetaData
+
+	- popisujú rôzne aspekty súborov údajov, aby znížili problémy nedorozumenia alebo nezrovnalostí
 	\end{itemize}
 \item \emph {Spoľahlivosť}
 	\begin{itemize}
 	\item Presnosť
+
+	- na zistenie presnosti hodnoty údajov sa hodnota porovnáva so známou referenčnou hodnotou, v niektorých prípadoch sa presnosť dá ľahko zmerať, ale vo väčšine pripadoch je meranie sťažené, lebo 		presnosť úzko súvisí s kontextom
 	\item Konzistencia
+
+	- či je logický vzťah medzi korelovanými údajmi správny a úplný
 	\item Celistvosť
+
+	- odlišné významy na základe kontextu, v databáze musia všetky charakteristiky údajov byť správne, v informatickej bezpečnosti to znamená udržanie a zabezpečenie presnosti a konzistencie údajov, údaje 	nemožno upravovať neoprávneným spôsobom
 	\item Úplnosť
-	\item Auditability
+
+	- hodnoty všetkých zložiek jedného údaja sú platné
 	\end{itemize}
 \item \emph {Relevantnosť}
 	\begin{itemize}
 	\item Fitness
+
+	- dvojúrovňové požiadavky: množstvo údajov používaných používateľmi, do akej miery vytvorené údaje zodpovedajú potrebám používateľov
 	\end{itemize}
 \item \emph {Kvalita prezentácie}
 	\begin{itemize}
 	\item Čitateľnosť
+
+	- schopnosť obsahu údajov byť správne vysvetlená podľa známych alebo dobre definovaných pojmov, atribútov, jednotiek atď.
 	\item Štruktúra
+
+	- označuje úroveň náročnosti transformácie neštruktúrovaných alebo pološtruktúrovaných údajov na štruktúrované údaje pomocou technológií 
 	\end{itemize}
 \end{itemize}
 
